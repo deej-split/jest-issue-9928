@@ -5,5 +5,8 @@ module.exports = {
   setupFilesAfterEnv: [
     '<rootDir>/config/jestCustomMatchers.js',
   ],
-  snapshotSerializers: ['enzyme-to-json/serializer']
+  snapshotSerializers: ['enzyme-to-json/serializer'],
+  "transform": {
+    "^.+\\.[t|j]sx?$": "babel-jest"
+  },
 };
